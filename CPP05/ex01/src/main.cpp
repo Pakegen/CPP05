@@ -23,5 +23,15 @@ int main()
 	{
 		std::cout << "Exception: " << e.what() << std::endl;
 	}
+
+	try
+	{
+		Form tooLow("Too Low", 151, 100);
+		std::cout << tooLow << std::endl;
+	}
+	catch (std::exception const &e)
+	{
+		std::cout << "Exception: " << e.what() << std::endl;
+	}
 	return 0;
 }
